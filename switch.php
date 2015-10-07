@@ -49,4 +49,10 @@ class SwitchField extends CheckboxField {
     return empty($text) ? ' ' : $text;
   }
 
+  public function result() {
+
+    return v::accepted(parent::result()) ? 'true' : 'false';
+
+  }
+
 }
